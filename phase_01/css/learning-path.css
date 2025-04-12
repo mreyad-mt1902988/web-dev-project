@@ -1,0 +1,143 @@
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: #F5F5F5;
+    color: #32073F;
+}
+
+#main-page-button {
+    display: block;
+    margin: 1.5rem auto;
+}
+
+.button {
+    background-color: #32073F;
+    color: white;
+    padding: 1rem 3rem;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    white-space: nowrap;
+}
+
+.button:hover {
+    background-color: #4b0a5c;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+}
+
+h1 {
+    text-align: center;
+    padding-top: 2.5rem;
+    font-weight: 600;
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 1rem;
+}
+
+.courses-container > p {
+    text-align: center;
+}
+
+.course-card {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.course-logo {
+    width: 50px;
+    height: 50px;
+}
+
+#name {
+    grid-area: name;
+}
+
+#code {
+    grid-area: code;
+}
+
+#category {
+    grid-area: category;
+}
+
+#instructor {
+    grid-area: instructor;
+}
+
+#section {
+    grid-area: section;
+}
+
+#grade {
+    grid-area: grade;
+}
+
+.course-info {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+    grid-template-areas: "name name" "code category" "instructor section" "grade grade";
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.extra-course-info {
+    background-color: white;
+    margin: auto;
+    padding: 2rem;
+    width: 75%;
+    border-radius: 20px;
+    border: none;
+}
+
+.close-button {
+    color: #aaaaaa;
+    float: right;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.close-button:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
