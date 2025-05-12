@@ -1,0 +1,107 @@
+.loginPage {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    background-color: #32073F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.loginPage h1 {
+    margin-bottom: 2rem;
+}
+
+.loginPage h1 i {
+    margin-left: 0.5rem;
+}
+
+.loginForm {
+    background-color: white;
+    color: #32073F;
+    padding: 3rem 1rem;
+    margin: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 3rem;
+}
+
+.role {
+    border: none;
+    padding: 0.5rem 0.25rem;
+    margin-left: 5px;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 7.5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.formGroup label {
+    font-weight: 600;
+    margin-right: 17.5px;
+}
+
+.formGroup input {
+    border: 2px solid #a999b8;
+    border-radius: 15px;
+    padding: 0.75rem 1.5rem;
+    width: 250px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.loginButton {
+    background-color: #32073F;
+    color: white;
+    padding: 1.25rem 3rem;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    width: 275px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.loginButton:hover {
+    background-color: #4b0a5c;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+}
+
+.loginPage p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.errorMessage {
+    /* display: none; */
+    color: #dc143c;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+    .loginForm {
+        width: 70vw;
+    }
+
+    .formGroup {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1.5rem;
+    }
+} 

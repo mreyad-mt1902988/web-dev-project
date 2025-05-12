@@ -1,0 +1,262 @@
+.homePage {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.homePage ul {
+    list-style: none;
+}
+
+.homePage a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.headerMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 1.5rem;
+    padding-top: 1rem;
+    white-space: nowrap;
+}
+
+.headerMenu li>a,
+.footerMenu li>a {
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.headerMenu li>a:hover,
+.footerMenu li>a:hover {
+    color: #4b0a5c;
+    font-weight: 600;
+}
+
+.searchOption {
+    border: none;
+    padding: 0.5rem 0.25rem;
+    border-radius: 7.5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-left: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    border: 2px solid #a999b8;
+    border-radius: 15px;
+    padding: 0.75rem 1.5rem;
+    width: 300px;
+    margin-bottom: 1.25rem;
+}
+
+.searchBox i {
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+
+.searchBox input[type="search"] {
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.button {
+    background-color: #32073F;
+    color: white;
+    padding: 1rem 3rem;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    width: 175px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    white-space: nowrap;
+}
+
+.button:hover {
+    background-color: #4b0a5c;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+}
+
+.homePage main {
+    background-color: #F5F5F5;
+    color: #32073F;
+    margin-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.homePage h1 {
+    text-align: center;
+    padding-top: 2.5rem;
+    font-weight: 600;
+}
+
+.coursesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 1rem;
+}
+
+.coursesContainer>p {
+    text-align: center;
+}
+
+.courseCard {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.courseCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.courseLogo {
+    width: 50px;
+    height: 50px;
+}
+
+#name {
+    grid-area: name;
+}
+
+#code {
+    grid-area: code;
+}
+
+#category {
+    grid-area: category;
+}
+
+#instructor {
+    grid-area: instructor;
+}
+
+#section {
+    grid-area: section;
+}
+
+.courseInfo {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    grid-template-areas: "name name" "code category" "instructor section";
+}
+
+.registerButton {
+    padding: 1.5rem 3rem;
+    margin-top: 1rem;
+}
+
+.otherServices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #a999b8;
+    padding-bottom: 4rem;
+}
+
+.otherServices button {
+    width: auto;
+}
+
+.errorMessage {
+    color: #dc143c;
+    font-weight: 500;
+}
+
+f.homePage footer {
+    padding-top: 2rem;
+}
+
+.footerMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.homePage footer p {
+    background-color: #32073F;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.extraCourseInfo {
+    background-color: white;
+    margin: auto;
+    padding: 2rem;
+    width: 75%;
+    border-radius: 20px;
+    border: none;
+}
+
+.closeButton {
+    color: #aaaaaa;
+    float: right;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.closeButton:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .headerMenu {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 1.5rem;
+        align-items: center;
+    }
+
+    .searchBox {
+        width: 175px;
+    }
+
+    .footerMenu {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

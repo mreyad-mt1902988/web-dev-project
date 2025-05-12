@@ -1,0 +1,44 @@
+.statsPage {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    color: #32073F;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.loading {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 3rem;
+    color: #32073F;
+}
+
+.statsPage h1 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.statsPage h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.statsPage ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.statsPage li {
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .statsPage {
+        padding: 3rem;
+    }
+}
